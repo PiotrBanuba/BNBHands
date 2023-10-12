@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBHands",
             targets: [
                 "BNBHands",
-                "BNBHandsBNBSdkCoreTarget",
-                "BNBHandsBNBEffectPlayerTarget",
-                "BNBHandsBNBScriptingTarget"
+                "BNBHandsBNBSdkCore",
+                "BNBHandsBNBEffectPlayer",
+                "BNBHandsBNBScripting"
             ]
         ),
     ],
@@ -40,7 +40,7 @@ let package = Package(
             checksum: "723e6297ea1a302c5e71e9317aebca48ae8f71c7887d03c52d0a2a3d3b0bc36a"
         ),
         .target(
-            name: "BNBHandsBNBSdkCoreTarget",
+            name: "BNBHandsBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -49,7 +49,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHandsBNBEffectPlayerTarget",
+            name: "BNBHandsBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -58,7 +58,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHandsBNBScriptingTarget",
+            name: "BNBHandsBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
