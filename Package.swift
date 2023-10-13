@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-13"
+let bnbPackageVersion: Version = "1.8.0-14"
 
 let package = Package(
     name: "BNBHands",
@@ -13,9 +13,9 @@ let package = Package(
             name: "BNBHands",
             targets: [
                 "BNBHands_Target",
-                "BNBHands_BNBHands_Target",
-                "BNBHands_BNBHands_Target",
-                "BNBHands_BNBHands_Target"
+                "BNBHands_BNBSdkCore_Target",
+                "BNBHands_BNBEffectPlayer_Target",
+                "BNBHands_BNBScripting_Target"
             ]
         ),
     ],
