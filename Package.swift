@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-14"
+let bnbPackageVersion: Version = "1.8.0-15"
 
 let package = Package(
     name: "BNBHands",
@@ -12,10 +12,10 @@ let package = Package(
         .library(
             name: "BNBHands",
             targets: [
-                "BNBHands_Target",
-                "BNBHands_BNBSdkCore_Target",
-                "BNBHands_BNBEffectPlayer_Target",
-                "BNBHands_BNBScripting_Target"
+                "BNBHands",
+                "BNBHands_BNBSdkCore",
+                "BNBHands_BNBEffectPlayer",
+                "BNBHands_BNBScripting"
             ]
         ),
     ],
@@ -35,12 +35,12 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "BNBHands_Target",
+            name: "BNBHands",
             url: "https://d2cm7wtcqqw29.cloudfront.net/1.8.0-58-g46079e7d74/BNBHands.zip",
             checksum: "723e6297ea1a302c5e71e9317aebca48ae8f71c7887d03c52d0a2a3d3b0bc36a"
         ),
         .target(
-            name: "BNBHands_BNBSdkCore_Target",
+            name: "BNBHandsBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -49,7 +49,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHands_BNBEffectPlayer_Target",
+            name: "BNBHandsBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -58,7 +58,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHands_BNBScripting_Target",
+            name: "BNBHandsBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
